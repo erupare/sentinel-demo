@@ -9,8 +9,8 @@ terraform {
 
 provider "aws" {
   region                  = "us-east-1"
-  profile                 = "default"
-  shared_credentials_file = "~/.aws/credentials"
+  profile                 = "clouduser"
+//  shared_credentials_file = "~/.aws/credentials"
 }
 
 
@@ -33,7 +33,7 @@ provider "aws" {
 resource "aws_instance" "web" {
   ami           = "ami-0c322300a1dd5dc79"
   instance_type = "t2.micro"
-  tags = {
-    Name = "Wolverine"
-  }
+//  tags = {
+//    Name = "samazß"
+//  }
 }
