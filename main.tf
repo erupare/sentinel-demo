@@ -13,7 +13,6 @@ provider "aws" {
   shared_credentials_file = "~/.aws/credentials"
 }
 
-
 //data "aws_ami" "ubuntu" {
 //  most_recent = true
 //
